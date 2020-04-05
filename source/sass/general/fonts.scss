@@ -1,2 +1,41 @@
-@import url("http://fonts.fontstorage.com/import/merriweather.css");
-@import url("http://fonts.fontstorage.com/import/lato.css");
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/latolight.woff2') format('woff2'), url('../fonts/lato/latolight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/latoregular.woff2') format('woff2'), url('../fonts/lato/latoregular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/latobold.woff2') format('woff2'), url('../fonts/lato/latobold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/lato/latoblack.woff2') format('woff2'), url('../fonts/lato/latoblack.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../fonts/merriweather/merriweatherbold.woff2') format('woff2'), url('../fonts/merriweather/merriweatherbold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../fonts/merriweather/merriweatherultrabold.woff2') format('woff2'), url('../fonts/merriweather/merriweatherultrabold.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
