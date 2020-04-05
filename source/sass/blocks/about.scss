@@ -50,7 +50,7 @@
 }
 
 .about__description {
-  width: 445px;
+  max-width: 445px;
   margin: 0;
   padding: 0;
   margin-top: 40px;
@@ -109,5 +109,11 @@
     &:nth-child(odd) {
       margin-right: 0;
     }
+  }
+}
+
+@media (max-width: 1078px) {
+  .about__wrapper {
+    flex-direction: column;
   }
 }

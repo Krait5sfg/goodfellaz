@@ -1,5 +1,5 @@
 .form {
-  width: 540px;
+  max-width: 540px;
   padding-top: 13px;
 }
 
@@ -16,7 +16,6 @@
 }
 
 .form__block {
-  width: 255px;
 
   &:nth-child(1) {
     margin-right: 30px;
@@ -60,4 +59,23 @@
 .form__button {
   margin-top: 45px;
   margin-left: auto;
+}
+
+@media (max-width: 610px) {
+  .form__fieldset {
+    flex-direction: column;
+  }
+
+  .form__block {
+    &:nth-child(1) {
+      margin-right: 0;
+      margin-bottom: 25px;
+    }
+  }
+
+  .form__button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }

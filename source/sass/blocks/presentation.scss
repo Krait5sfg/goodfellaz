@@ -12,7 +12,7 @@
 
 .presentation__title {
   display: block;
-  width: 589px;
+  max-width: 589px;
 
   @include text-set(48px, 66px, $merri);
   font-weight: 700;
