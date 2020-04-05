@@ -1,0 +1,41 @@
+.header {
+  background-color: #F9F9F9;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-direction: row;
+  @include wrapper;
+  padding-top: 22px;
+  padding-bottom: 31px;
+}
+
+.header__logo {
+  margin-right: 30px;
+}
+
+.header__logo-text {
+  margin-right: auto;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+@media (max-width: 1150px) {
+  .header__wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 950px) {
+  .header__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header__logo,
+  .header__logo-text,
+  .header__menu {
+    margin: auto;
+  }
+}

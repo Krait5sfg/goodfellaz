@@ -1,0 +1,80 @@
+.communication {
+  background-image: url("../img/background-image-dark.jpg");
+  background-size: cover;
+}
+
+.communication__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include wrapper;
+  padding-top: 120px;
+  padding-bottom: 140px;
+}
+
+.communication__text {
+  margin: 0;
+  padding: 0;
+  margin-top: 35px;
+  width: 445px;
+  
+  @include text-set(18px, 25px, $lato);
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.communication__block {
+  margin-top: 80px;
+
+  @include text-set(21px, 21px, $lato);
+  font-weight: 300;
+}
+
+.communication__phone, 
+.communication__email {
+  position: relative;
+
+  display: inline-block;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.communication__phone {
+  margin-right: 95px;
+  padding-left: 40px;
+}
+
+.communication__phone::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 0;
+
+  width: 18px;
+  height: 30px;
+
+  background-image: url("../img/phone-icon-white.png");
+}
+
+.communication__email::before {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: -60px;
+
+  width: 40px;
+  height: 30px;
+
+  background-image: url("../img/package-icon-white.png");
+}
+
+@media (max-width: 1110px) {
+  .communication__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .communication__container {
+    margin-bottom: 60px;
+  }
+}

@@ -1,0 +1,22 @@
+.footer {
+  background-color: #F9F9F9;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @include wrapper;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.footer__copy-right,
+.footer__developer {
+  margin: 0;
+  padding: 0;
+
+  @include text-set(14px, 19px, $lato);
+  font-weight: 300;
+  color: #000000;
+}

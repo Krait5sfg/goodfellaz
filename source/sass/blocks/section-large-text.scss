@@ -1,0 +1,15 @@
+.section-large-text {
+  display: block;
+
+  @include text-set (48px, 69px, $merri);
+  font-weight: 900;
+  color: #333333;
+
+  &--blue {
+    color: #005FA3;
+  }
+  
+  &--white {
+    color: #ffffff;
+  }
+}

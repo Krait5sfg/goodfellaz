@@ -1,0 +1,113 @@
+.about__wrapper {
+  display: flex;
+  flex-direction: row;
+  @include wrapper;
+  padding-top: 140px;
+  padding-bottom: 110px;
+}
+
+.about__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  @include list-reset;
+  padding-top: 24px;
+}
+
+.about__item {
+  width: 255px;
+  height: 255px;
+  padding: 30px 108px 40px 40px;
+  margin-bottom: 30px;
+
+  background-color: #EBEBEB;
+  
+  &:nth-child(odd) {
+    margin-right: 30px;
+  }
+
+  &:hover {
+    background-color: #005FA3;
+  }
+
+  &:hover .about__number,
+  &:hover .about__deal,
+  &:hover .about__link {
+    transition: all 0.2s ease;
+    color: #ffffff;
+  }
+
+  &:hover .about__link::before {
+    transition: all 0.2s ease;
+    background-color:  #ffffff;
+  }
+
+}
+
+.about__name-one {
+  margin-top: 20px;
+}
+
+.about__description {
+  width: 445px;
+  margin: 0;
+  padding: 0;
+  margin-top: 40px;
+
+  @include text-set(18px, 25px, $lato);
+  font-weight: 300;
+}
+
+.about__number {
+  display: block;
+
+  @include text-set (55px, 66px, $lato);
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+
+.about__deal {
+  display: block;
+  margin-top: 12px;
+
+  @include text-set(14px, 18px, $lato);
+  font-weight: 700;
+  color: #000000;
+}
+
+.about__link {
+  position: relative;
+
+  display: inline-block;
+  margin-top: 50px;
+
+  @include text-set(14px, 17px,  $lato);
+  font-weight: 700;
+  color: #005FA3;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 0;
+
+    height: 2px;
+    width: 100%;
+    background-color:  #005FA3;
+  }
+}
+
+@media (max-width: 1060px) {
+  .about__list {
+    justify-content: space-around;
+  }
+
+  .about__item {
+    &:nth-child(odd) {
+      margin-right: 0;
+    }
+  }
+}

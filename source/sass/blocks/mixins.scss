@@ -1,0 +1,18 @@
+@mixin text-set ($size, $line-height, $font) {
+  font-size: $size;
+  line-height: $line-height;
+  font-family: $font;
+}
+
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin wrapper {
+  max-width: 1160px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}

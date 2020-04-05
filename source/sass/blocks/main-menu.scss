@@ -1,0 +1,5 @@
+.main-menu__list {
+  &:not(:last-child) {
+    margin-bottom: 22px;
+  }
+}

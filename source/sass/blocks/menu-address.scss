@@ -1,0 +1,64 @@
+.menu-address {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  @include list-reset;
+}
+
+.menu-address__item {
+  position: relative;
+
+  @include text-set(13px, 17px, $lato);
+  font-weight: 400;
+  color: #000000;
+
+  &:not(:last-child) {
+    margin-right: 75px;
+  }
+
+  &--phone::before,
+  &--clock::before,
+  &--package::before,
+  &--placeholder::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -25px;
+  }
+
+  &--phone::before {
+    width: 10px;
+    height: 17.21px;
+    background-image: url("../img/phone-icon.png");
+  }
+
+  &--clock::before {
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/clock-icon.png");
+  }
+
+  &--package::before {
+    left: -30px;
+    width: 23px;
+    height: 17px;
+    background-image: url("../img/package-icon.png");
+  }
+
+  &--placeholder::before {
+    width: 15px;
+    height: 17px;
+    background-image: url("../img/placeholder-icon.png");
+  }
+}
+
+.menu-address__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (max-width: 740px) {
+  .menu-address {
+    display: none;
+  }
+}

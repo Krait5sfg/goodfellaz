@@ -1,0 +1,28 @@
+.presentation {
+
+  background-image: url("../img/background-image.png");
+  background-size: cover;
+}
+
+.presentation__wrapper {
+  @include wrapper;
+  padding-top: 170px;
+  padding-bottom: 113px;
+}
+
+.presentation__title {
+  display: block;
+  width: 589px;
+
+  @include text-set(48px, 66px, $merri);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.presentation__button {
+  margin-top: 80px;
+}
+
+.presentation__toggles {
+  margin-top: 70px;
+}

@@ -1,0 +1,5 @@
+.logo-text {
+  @include text-set (36px, 50px, $merri);
+  color: #005FA3;
+  font-weight: 900;
+}

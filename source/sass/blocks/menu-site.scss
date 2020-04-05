@@ -1,0 +1,24 @@
+.menu-site{
+  display: flex;
+  flex-direction: row;
+
+  @include list-reset;
+}
+
+.menu-site__item {
+  &:not(:last-child) {
+    margin-right: 68px;
+  }
+  &:nth-child(4) {
+    margin-right: 61px;
+  }
+}
+
+.menu-site__link {
+  @include text-set (14px, 17px, $lato); 
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #222222;
+    text-decoration: none;
+}

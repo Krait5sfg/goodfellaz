@@ -1,0 +1,17 @@
+.button {
+  display: block;
+  width: 270px;
+  height: 60px;
+  padding: 17px 0; 
+
+  @include text-set(18px, 25px, $lato);
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+
+  
+  background-color:#005FA3;
+  border: none;
+
+  cursor: pointer;
+}

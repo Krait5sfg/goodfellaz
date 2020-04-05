@@ -1,0 +1,8 @@
+.section-title {
+  padding: 0;
+  margin: 0;
+
+  @include text-set (24px, 33px, $lato);
+  font-weight: 900;
+  color: #BDBDBD;
+}

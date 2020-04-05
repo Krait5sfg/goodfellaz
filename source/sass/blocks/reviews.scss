@@ -1,0 +1,60 @@
+.reviews__wrapper {
+  @include wrapper;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.reviews__text {
+  margin-top: 20px;
+}
+
+.reviews__container {
+  padding: 45px 95px;
+  margin-top: 55px; 
+
+  @include text-set(18px, 25px, $lato);
+  font-weight: 300;
+  color: #000000;
+
+  background: #EBEBEB;
+}
+
+.reviews__text-review,
+.reviews__person {
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__person {
+  position: relative;
+
+  width: 340px;
+  padding: 17px 0 17px 115px;
+  margin-top: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left:0;
+    
+    width: 80px;
+    height: 80px;
+    
+    background-image: url("../img/review-avatar.png");
+  }
+}
+
+.reviews__name {
+  font-weight: 900;
+}
+
+.reviews__position {
+  @include text-set(14px, 19px, $lato);
+  font-weight: 400;
+  color: #4F4F4F;
+}
+
+.reviews__toggles {
+  margin-top: 50px;
+}
