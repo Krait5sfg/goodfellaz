@@ -862,6 +862,10 @@ body {
   float: left;
 }
 
+.owl-stage-outer {
+  margin-bottom: 50px;
+}
+
 .owl-nav {
   float: right;
 }
