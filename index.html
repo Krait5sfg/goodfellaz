@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="source/css/style.css">
+  <link rel="stylesheet" href="source/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="source/css/owl.theme.default.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body class="body">
@@ -118,7 +122,25 @@
       <div class="clients__wrapper">
         <h2 class="clients__title section-title">Наши клиенты</h2>
         <span class="clients__text section-large-text">С нами работают</span>
-        <ul class="clients__list">
+        <ul class="clients__list owl-carousel owl-carousel-clients">
+          <li class="clients__item">
+            <img src="source/img/company-icon.png" alt="Название компании" width="255" height="130">
+          </li>
+          <li class="clients__item">
+            <img src="source/img/company-icon.png" alt="Название компании" width="255" height="130">
+          </li>
+          <li class="clients__item">
+            <img src="source/img/company-icon.png" alt="Название компании" width="255" height="130">
+          </li>
+          <li class="clients__item">
+            <img src="source/img/company-icon.png" alt="Название компании" width="255" height="130">
+          </li>
+          <li class="clients__item">
+            <img src="source/img/company-icon.png" alt="Название компании" width="255" height="130">
+          </li>
+          <li class="clients__item">
+            <img src="source/img/company-icon.png" alt="Название компании" width="255" height="130">
+          </li>
           <li class="clients__item">
             <img src="source/img/company-icon.png" alt="Название компании" width="255" height="130">
           </li>
@@ -132,7 +154,7 @@
             <img src="source/img/company-icon.png" alt="Название компании" width="255" height="130">
           </li>
         </ul>
-        <div class="clients__toggles toggles">
+        <!-- <div class="clients__toggles toggles">
           <div class="toggles__circle">
             <button class="toggles__circle-btn toggles__circle-btn--blue" type="button"
               aria-label="Переключение слайдов"></button>
@@ -149,7 +171,7 @@
             <button class="toggles__square-right toggles__square-right--blue" type="button"
               aria-label="Переключение слайдов вправо"></button>
           </div>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -229,7 +251,8 @@
       <p class="footer__developer">Разработано: BuhOne</p>
     </div>
   </footer>
-
+  <script src="source/js/owl.carousel.min.js"></script>
+  <script src="source/js/script.js"></script>
 </body>
 
 </html>
