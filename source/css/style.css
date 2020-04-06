@@ -932,4 +932,48 @@ body {
   opacity: 1;
 }
 
+.owl-carousel-presentation .owl-dots .owl-dot {
+  background-color: #ffffff !important;
+}
+
+.owl-carousel-presentation .owl-nav .owl-next,
+.owl-carousel-presentation .owl-nav .owl-prev {
+  position: relative;
+  background-color: #ffffff !important;
+  opacity: 0.4;
+}
+
+.owl-carousel-presentation .owl-nav .owl-next.disabled,
+.owl-carousel-presentation .owl-nav .owl-prev.disabled {
+  opacity: 0.2;
+}
+
+.owl-carousel-presentation .owl-nav {
+  position: relative;
+}
+
+.owl-carousel-presentation .owl-nav::before {
+  position: absolute;
+  content: "";
+  top: 26px;
+  left: 27px;
+  z-index: 1;
+  width: 8px;
+  height: 15px;
+  transform: translate(-25%, -25%);
+  background-image: url("../img/arrow-left-icon.png");
+}
+
+.owl-carousel-presentation .owl-nav::after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: 25px;
+  z-index: 1;
+  width: 8px;
+  height: 15px;
+  transform: translate(-25%, -25%);
+  background-image: url("../img/arrow-right-icon.png");
+}
+
 /*# sourceMappingURL=style.css.map */

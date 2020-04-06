@@ -18,3 +18,14 @@ $(document).ready(function () {
     smartSpeed: 1000,
   });
 });
+
+$(document).ready(function () {
+  $(".owl-carousel-presentation").owlCarousel({
+    items: 1,
+    nav: true,
+    navText: "",
+    dotsEach: 1,
+    margin: 10,
+    smartSpeed: 1000,
+  });
+});
