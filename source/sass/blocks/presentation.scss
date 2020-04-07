@@ -5,6 +5,8 @@
 }
 
 .presentation__wrapper {
+  position: relative;
+
   @include wrapper;
   padding-top: 170px;
   padding-bottom: 113px;
@@ -20,7 +22,9 @@
 }
 
 .presentation__button {
-  margin-top: 80px;
+  position: absolute;
+  top: 450px;
+  left: 20px;
 }
 
 .presentation__toggles {
