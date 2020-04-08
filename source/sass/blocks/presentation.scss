@@ -10,6 +10,10 @@
   @include wrapper;
   padding-top: 170px;
   padding-bottom: 113px;
+
+  @media(max-width: 600px) {
+    text-align: center;
+  }
 }
 
 .presentation__title {
@@ -19,12 +23,24 @@
   @include text-set(48px, 66px, $merri);
   font-weight: 700;
   color: #ffffff;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+    line-height: 45px;
+  }
 }
 
 .presentation__button {
   position: absolute;
   top: 450px;
   left: 20px;
+
+  @media (max-width: 600px) {
+    top: 60%;
+    left: 50%;
+
+    transform: translate(-50%, -60%);
+  }
 }
 
 .presentation__toggles {

@@ -5,6 +5,20 @@ $(document).ready(function () {
     navText: "",
     dotsEach: 2,
     smartSpeed: 500,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 2,
+      },
+      500: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+    }
   });
 });
 

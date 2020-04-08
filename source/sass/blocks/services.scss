@@ -6,6 +6,11 @@
   @include wrapper;
   padding-top: 140px;
   padding-bottom: 110px; 
+
+  @media (max-width: 600px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .services__text {
@@ -35,6 +40,10 @@
   color: #ffffff;
 
   background-image: url("../img/background-services-item.png");
+
+  @media(max-width: 600px) {
+    width: 300px;
+  }
 
   &:hover::before {
     position: absolute;

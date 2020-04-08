@@ -4,6 +4,11 @@
   @include wrapper;
   padding-top: 140px;
   padding-bottom: 110px;
+
+  @media (max-width: 600px) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .about__list {
@@ -57,6 +62,17 @@
 
   @include text-set(18px, 25px, $lato);
   font-weight: 300;
+
+  @media (max-width: 1078px) {
+    max-width: 100%;
+    margin: 0;
+
+    text-align: center;
+  } 
+
+  @media (max-width: 600px) {
+    font-size: 15px;
+  }
 }
 
 .about__number {

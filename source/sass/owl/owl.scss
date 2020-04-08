@@ -3,6 +3,9 @@
   margin-top: 45px;
 
   float: left;
+  @media (max-width: 768px) {
+    display: none;
+  }
 }
 
 .owl-stage-outer {
@@ -11,6 +14,12 @@
 
 .owl-nav {
   float: right;
+
+  @media(max-width: 600px) {
+    float: none;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .owl-carousel::after {

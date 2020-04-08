@@ -12,10 +12,15 @@
   &--white {
     color: #ffffff;
   }
-}
 
-@media (max-width: 740px) {
-  .section-large-text {
+  @media (max-width: 740px) {
     font-size: 30px;
+    line-height: 50px;
+  }
+
+  @media (max-width: 600px) {
+    text-align: center;
+    font-size: 25px;
   }
 }
+

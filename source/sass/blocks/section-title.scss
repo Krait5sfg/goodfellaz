@@ -5,4 +5,8 @@
   @include text-set (24px, 33px, $lato);
   font-weight: 900;
   color: #BDBDBD;
+
+  @media (max-width: 600px) {
+    text-align: center;
+  }
 }
