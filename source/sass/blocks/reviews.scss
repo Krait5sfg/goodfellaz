@@ -78,6 +78,10 @@
   @include text-set(14px, 19px, $lato);
   font-weight: 400;
   color: #4F4F4F;
+
+  @media (max-width: 600px) {
+    margin-top: 20px;
+  }
 }
 
 .reviews__toggles {

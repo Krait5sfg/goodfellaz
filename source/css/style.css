@@ -755,6 +755,11 @@ body {
   font-weight: 400;
   color: #4F4F4F;
 }
+@media (max-width: 600px) {
+  .reviews__position {
+    margin-top: 20px;
+  }
+}
 
 .reviews__toggles {
   margin-top: 50px;
